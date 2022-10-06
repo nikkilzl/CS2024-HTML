@@ -169,6 +169,8 @@ footer {
 
 .footer-middle {
 	padding: 0 40px;
+	display:flex;
+	flex-direction: row;
 }
 
 .footer-col {
@@ -181,8 +183,39 @@ footer {
 .footer-col-title {
 	color: #FFFFFF;
 	font-size: 16px;
-	font-weight: 550;
+	font-weight: 650;
 
+}
+
+.footer-text-bold {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 550;
+}
+
+.footer-text-normal  {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.footer-hyperlink {
+
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.mapouter{
+	position:relative;
+	text-align:right;
+	height:200px;
+	width:300px;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:200px;width:300px;
 }
 
 /* ===== copyright and T&C ===== */
