@@ -1,4 +1,6 @@
 ﻿/* ====================== ALL PAGES ===================== */
+/* green - #00B944;
+	blue - #016FFF; */
 
 body {
 	padding: 0px;
@@ -57,7 +59,7 @@ img {
 }
 
 .navapply-button {
-	background-color: #00B944;
+	background-color: #016FFF;
 	color: #FFFFFF;
 	border-radius: 40px;
 	font-weight: 600;
@@ -67,7 +69,7 @@ img {
 	height: 36px;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(90 217 172 / 30%);
+	box-shadow: 0 5px 20px rgb(1 111 255 / 30%);
 }
 
 /* ===== navigation menu ===== */ 
@@ -95,7 +97,7 @@ img {
 	color: #016FFF;
 }
 
-.navmenu-hover:after {
+.navmenu-hover:before {
 	content: '';
 	position: absolute; /* place underline below content*/
 	width: 100%; 
@@ -108,14 +110,10 @@ img {
 	transition: transform 0.4s ease-out;
 }
 
-.navmenu-hover:hover:after{
+.navmenu-hover:hover:before {
 	transform: scaleX(1);
 	transform-origin: bottom left;
-}
-
-.navmenu-hover:active:after{
-	transform: scaleX(1);
-	transform-origin: bottom left;
+	visibility: visible;
 }
 
 /* ======================= header end ====================
@@ -243,6 +241,137 @@ footer {
 }
 
 /* =================== footer end  ======================== */
+
+
+/*==================== HOME PAGE ========================= */
+
+/* ==== hero header ==== */
+
+.heroheader {
+	padding: 115px 0 110px;
+	background: #016FFF;
+	color: #FFFFFF;
+	min-height: 380px;
+	position: relative;
+}
+
+.heroheader-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.heroheader-container {
+	padding: 0 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.heroheader-title {
+	margin-right: 30px;
+	margin-left: 90px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	z-index: 30;
+	width: 60%;
+	clear: right;
+}
+
+h1 {
+	font-size: 40px;
+    line-height: 60px;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	clear: right;
+}
+
+.form-wrap {
+	margin: 30px 30px 30px 30px;
+	padding: 0;
+	width: 40%;
+	z-index: 30;
+}
+
+.form-container {
+	background-color: #FFFFFF;
+	border-radius: 30px;
+	height: 500px;
+	width: 450px;
+	box-shadow: 0 5px 20px rgb(90 217 172 / 30%);
+}
+
+.form-content {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 0 30px;	
+}
+
+@media screen and (max-wdith: 1280px)
+.heroheader-bg {
+	bottom: -5px;
+}
+
+.animate {
+	transition: visibility 1s ease, opacity 1s ease, transform 1s ease, -webkit-transform 1s ease;
+}
+
+.heroheader-decor1 {
+	background: #00B944;
+	background-image: linear-gradient(183deg, #5cf7e2 0%, #00B944 91%);
+	border-radius: 44px;
+	width: 800px;
+	height: 88px;
+	position: absolute;
+	top: 350px;
+	right: calc((100% - 1600px) / 2);
+	bottom: 120px;
+	z-index: 2;
+	transform: rotate(-45deg) !important;
+}
+
+.heroheader-decor2 {
+	background: #00B944;
+	background-image: linear-gradient(183deg, #5cf7e2 0%, #00B944 91%);
+	border-radius: 44px;
+	width: 280px;
+	height: 88px;
+	position: absolute;
+	right: calc((100% - 1300px) / 2);
+	top: 400px;
+	bottom: 120px;
+	z-index: 2;
+	transform: rotate(-45deg) !important;
+}
+
+.heroheader-decor3 {
+	background: #00B944;
+	background-image: linear-gradient(183deg, #5cf7e2 0%, #00B944 91%);
+	border-radius: 80px;
+	width: 520px;
+	height: 150px;
+	position: absolute;
+	top: 230px;
+	left: calc((100% - 1900px) / 2);
+	bottom: 120px;
+	z-index: 2;
+	transform: rotate(-45deg) !important;
+}
+
+.heroheader-decor4 {
+	background: #00B944;
+	background-image: linear-gradient(183deg, #5cf7e2 0%, #00B944 91%);
+	border-radius: 44px;
+	width: 280px;
+	height: 88px;
+	position: absolute;
+	left: calc((100% - 1500px) / 2);
+	top: 400px;
+	bottom: 120px;
+	z-index: 2;
+	transform: rotate(-45deg) !important;
+}
+
 
 /* =================== APPLY NOW PAGE ==================== */
 
