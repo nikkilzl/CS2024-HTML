@@ -59,7 +59,7 @@ img {
 }
 
 .navapply-button {
-	background-color: #016FFF;
+	background-color: #00B944;
 	color: #FFFFFF;
 	border-radius: 40px;
 	font-weight: 550;
@@ -69,7 +69,7 @@ img {
 	height: 38px;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(1 111 255 / 30%);
+	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 }
 
 /* ===== navigation menu ===== */ 
@@ -245,7 +245,7 @@ footer {
 /* =========== APPLY BUTTON ============ */
 
 .apply-button {
-	background-color: #016FFF;
+	background-color: #00B944;
 	color: #FFFFFF;
 	border-radius: 40px;
 	font-weight: 600;
@@ -257,7 +257,7 @@ footer {
 	height: 28px;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(1 111 255 / 30%);
+	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 }
 
 
@@ -521,6 +521,93 @@ h1 {
 	width: 380px;
     margin-right: 20px;
 }
+
+/* ========= 3 easy steps ===========*/
+
+.stepswrapper {
+	background: #016FFF;
+    padding: 50px 0;
+}
+
+.stepscontainer {
+	max-width: 1280px;
+	margin: 0 30px;
+}
+
+.steps-heading {
+	font-size:	38px;
+	padding: 0;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.steps-col-box {
+	max-width: 750px;
+    margin: 80px auto;
+}
+
+
+.steps-col {
+	margin-bottom: 43px;
+    width: 340px;
+    padding-left: 65px;
+    margin-left: auto;
+    position: relative;
+	/*visibility: visible;
+    animation-name: fadeInUp;*/
+}
+
+.step-col-2 {
+	margin-bottom: 43px;
+    width: 340px;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 80px;
+    margin-left: 0;
+	position: relative;
+}
+
+.steps-col:after {
+	content: "";
+    width: 2px;
+    height: 100%;
+    border: 1.5px dashed #FFFFFF;
+    position: absolute;
+    left: 23px;
+    top: 50%;
+}
+
+
+.steps-col-icon {
+	background: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* ========= FAQ ========= */
+
+.faqwrapper {
+	background: #FFFFFF;
+    padding: 50px 0;
+}
+
+.faqcontainer {
+	max-width: 1280px;
+	margin: 0 30px;
+}
+
+.mt-20px {
+    margin-top: 20px!important;
+
 /* =================== APPLY NOW PAGE ==================== */
 
 
