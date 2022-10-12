@@ -390,32 +390,41 @@ h1 {
 
 /* ============ why choose =========== */
 .choose-sec {
-	padding: 50px 0 50px 0;
+	padding: 80px 0 80px;
 	background: #f4f5fa;
 	color: #273152;
 	width: 100%;
+	height: 650px;
 	position: relative;
-	text-align: center;
 }
 
 .choose-sec-wrapper {
 	max-width: 1280px;
-	margin: 0 30px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.choose-sec-container {
+	padding: 0 40px;
 }
 
 .choose-heading {
 	font-size:	38px;
 	padding: 0 0 0 30px;
+	text-align: center;
 }
 
 .choose6-container {
 	margin-top: 50px;
+	padding-left: 80px;
+	content-align: center;
 }
 
 .choose6-cards {
 	grid-template-columns: auto auto auto;
 	gap: 80px 400px;
 	width: 100%;
+	content-align: center;
 }
 
 .choose6-card {
@@ -449,15 +458,22 @@ h1 {
 /* ======= loan service ======= */
 
 .loanservice {
-	padding: 50px 0;
-	text-align: center;
+	padding: 80px 0 80px;
+	background: #FFFFFF;
 	color: #273152;
-	background-color: #FFFFFF;
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
+.loanservice-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
 .loanservice-container {
-	max-width: 1280px;
-	margin: 0 30px;
+	padding: 0 40px;
 }
 
 .swiper-container {
@@ -524,22 +540,32 @@ h1 {
 
 /* ========= 3 easy steps ===========*/
 
-.stepswrapper {
+.steps {
+	padding: 80px 0 80px;
 	background: #016FFF;
-    padding: 50px 0;
+	color: #FFFFFF;
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+
+.stepswrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
 .stepscontainer {
-	max-width: 1280px;
-	margin: 0 30px;
+	padding: 0 40px;
 }
 
 .steps-heading {
 	font-size:	38px;
-	padding: 0;
+	padding: 0 0 0 30px;
 	color: #FFFFFF;
 	text-align: center;
 }
+
 
 .steps-col-box {
 	max-width: 750px;
@@ -593,20 +619,175 @@ h1 {
     z-index: 2;
 }
 
+/* ============ REVIEWS ========== */
+
+.review {
+	padding: 80px 0 80px;
+	background: #FFFFFF;
+	color: #273152;
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
+.reviewwrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.reviewcontainer {
+	padding: 0 40px;
+}
+
+
 /* ========= FAQ ========= */
 
+.faq {
+	padding: 80px 0 80px;
+	background: #f4f5fa;
+	color: #273152;
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
 .faqwrapper {
-	background: #FFFFFF;
-    padding: 50px 0;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
 }
 
 .faqcontainer {
-	max-width: 1280px;
-	margin: 0 30px;
+	padding: 0 40px;
+}
+
+.faqsubheading {
+	text-align: center;
+	padding: 0 0 0 30px;
+	font-size: 16px;
+	color: #8490a5;
+	margin-bottom: 50px;
 }
 
 .mt-20px {
     margin-top: 20px!important;
+}
+
+.accordion {
+    border-bottom: 1px solid #e5e7eb;
+    text-align: initial;
+    transition: box-shadow .2s ease;
+}
+
+.accordion-header {
+    padding: 30px 0 32px;
+}
+
+.accordion-header:after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    width: 14px;
+    height: 14px;
+    background-image: url(assets/icons/plus.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+	right: 20px;
+    display: block;
+}
+
+.active .accordion-header:after {
+    background-image: url(assets/icons/minus.png);
+}
+
+.accordion-title {
+	font-size: 18px;
+}
+
+.accordion-body {
+    padding: 0 54px 0 0;
+    overflow: hidden;
+    -webkit-transition: all .2s ease,margin 0s;
+    transition: all .2s ease,margin 0s;
+    margin-top: -10px;
+}
+
+.active .accordion-body {
+	padding-bottom: 22px;
+}
+
+/* ========= ARTICLES ========== */
+
+.article {
+	padding: 80px 0 80px;
+	background: #FFFFFF;
+	color: #273152;
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
+.articlewrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.articlecontainer {
+	padding: 0 40px;
+	align-content: center;
+}
+
+
+.article-col-box {
+	display: flex;
+	padding-top: 30px;
+	padding-left: 20px;
+	max-width: 1280px;
+	align-items: center;
+}
+
+.article-col {
+	width: 31.3%;
+    margin-right: 3%;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+    background: #FFFFFF;
+}
+
+.article-col-img {
+	width: 340px;
+	height: 199px;
+}
+
+.article-col-content {
+	padding: 0px 30px 20px;
+}
+
+.article-col-info {
+    display: flex;
+    align-items: right;
+    flex: right;
+	text-decoration: none;
+}
+
+.read-btn {
+	display: block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #11110C;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+	flex: right;
+    color: #11110C;
+	text-decoration: none;
+}
+
+
+
 
 /* =================== APPLY NOW PAGE ==================== */
 
