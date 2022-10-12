@@ -267,8 +267,8 @@ footer {
 
 .heroheader {
 	padding: 115px 0 110px;
-	background: #FFFFFF;
-	color: #273152;
+	background: #016FFF;
+	color: #FFFFFF;
 	width: 100%;
 	height: 400px;
 	position: relative;
@@ -333,8 +333,8 @@ h1 {
 }
 
 .heroheader-decor1 {
-	background: #016FFF;
-	background-image: linear-gradient(183deg, #5cf7e2 0%, #016FFF 91%);
+	background: #FFFFFF;
+	background-image: linear-gradient(183deg, #f4f5fa 0%, #FFFFFF 91%);
 	border-radius: 44px;
 	width: 520px;
 	height: 88px;
@@ -545,7 +545,7 @@ h1 {
 	background: #016FFF;
 	color: #FFFFFF;
 	width: 100%;
-	height: 800px;
+	height: 750px;
 	position: relative;
 }
 
@@ -568,7 +568,7 @@ h1 {
 
 
 .steps-col-box {
-	max-width: 750px;
+	max-width: 800px;
     margin: 80px auto;
 }
 
@@ -576,31 +576,45 @@ h1 {
 .steps-col {
 	margin-bottom: 43px;
     width: 340px;
-    padding-left: 65px;
+    padding-left: 85px;
     margin-left: auto;
     position: relative;
 	/*visibility: visible;
     animation-name: fadeInUp;*/
 }
 
-.step-col-2 {
-	margin-bottom: 43px;
-    width: 340px;
+.steps-col:nth-child(2n) {
     text-align: right;
     padding-left: 0;
     padding-right: 80px;
     margin-left: 0;
-	position: relative;
 }
 
-.steps-col:after {
+
+.steps-col-list:before {
 	content: "";
     width: 2px;
-    height: 100%;
+    height: 265px;
     border: 1.5px dashed #FFFFFF;
     position: absolute;
+	transform: translateX(12160%) translateY(-50%);
     left: 23px;
     top: 50%;
+	z-index: 1;
+}
+
+.steps-col:last-child {
+    margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.steps-col:last-child:after {
+    margin-bottom: 0px;
+}
+
+.steps-col:nth-child(2n):after {
+    left: 399px;
+    right: 23px;
 }
 
 
@@ -619,14 +633,35 @@ h1 {
     z-index: 2;
 }
 
+.steps-col:nth-child(2n) .steps-col-icon {
+    left: 375px;
+    right: 0;
+}
+
+.view-btn {
+    background-color: #00B944;
+    display: block;
+    margin: 80px auto 0;
+    border-radius: 44px;
+    width: 280px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+	text-decoration: none;
+	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
+}
+
 /* ============ REVIEWS ========== */
 
 .review {
 	padding: 80px 0 80px;
-	background: #FFFFFF;
+	background: #ffffff;
 	color: #273152;
 	width: 100%;
-	height: 650px;
+	height: 600px;
 	position: relative;
 }
 
@@ -639,6 +674,78 @@ h1 {
 .reviewcontainer {
 	padding: 0 40px;
 }
+
+.review-col-box {
+	display: flex;
+	padding-top: 30px;
+	padding-left: 30px;
+	max-width: 1280px;
+	align-items: center;
+}
+
+.review-col {
+	width: 31.3%;
+	height: 470px; /* change accordingly */
+    margin-right: 3%;
+    background: #FFFFFF;
+	align-items: center;
+}
+
+.review-col-img {
+	width: 300px;
+	height: 300px;
+	background-color: #016FFF;
+	border-radius: 30px;
+	padding-left: 20px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.review-quote {
+	padding-top: 20px;
+	width: 80px;
+	height: 80px;
+}
+
+.review-col-content {
+	padding: 0px 20px 20px;
+	color: #000000;
+}
+
+.review-col-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.review-col-info {
+    display: flex;
+	justify-content: flex-end;
+	padding: 50px 0 10px;
+	text-decoration: none;
+}
+
+.review-pic {
+	display: flex;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #016FFF;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+	flex: right;
+    color: #016FFF;
+	text-decoration: none;
+}
+
+.review-name {
+	padding-left: 10px;
+}
+
+
 
 
 /* ========= FAQ ========= */
@@ -722,7 +829,7 @@ h1 {
 .article {
 	padding: 80px 0 80px;
 	background: #FFFFFF;
-	color: #273152;
+	color: #000000;
 	width: 100%;
 	height: 650px;
 	position: relative;
@@ -762,12 +869,13 @@ h1 {
 
 .article-col-content {
 	padding: 0px 30px 20px;
+	color: #000000;
 }
 
 .article-col-info {
     display: flex;
-    align-items: right;
-    flex: right;
+	justify-content: flex-end;
+	padding: 20px 0 10px;
 	text-decoration: none;
 }
 
@@ -775,14 +883,14 @@ h1 {
 	display: block;
     width: 100px;
     height: 40px;
-    border: 1px solid #11110C;
+    border: 1px solid #016FFF;
     border-radius: 50px;
     text-align: center;
     line-height: 38px;
     font-weight: bold;
     font-size: 14px;
 	flex: right;
-    color: #11110C;
+    color: #016FFF;
 	text-decoration: none;
 }
 
