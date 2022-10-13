@@ -484,8 +484,14 @@ h1 {
 
 /* media scroller */
 
+.media-group div:target ~ #loanservice {
+	opacity:0;
+}
+
+
+
 .media-container {
-	padding-top: 50px;
+  padding-top: 50px;
   position: relative;
   align-items: center;
 }
@@ -495,6 +501,7 @@ h1 {
   display: grid;
   gap: 30px;
   grid-auto-flow: column;
+  padding: 5%;
 }
 
 .media-scroller {
