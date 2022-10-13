@@ -18,6 +18,7 @@ div {
 	width: 100%;
 	background-color: #FFFFFF;
 	position: fixed;
+	top: 0;
 	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
 	z-index: 999;
 	padding: 13px 0;
@@ -69,8 +70,22 @@ img {
 	height: 38px;
 	font-size: 16px;
 	text-decoration: none;
+}
+
+.navapply-button:hover {
+	background-color: #00B944;
+	color: #FFFFFF;
+	border-radius: 40px;
+	font-weight: 550;
+	padding: 8px 20px;
+	align-items: center;
+	text-align: center;
+	height: 38px;
+	font-size: 16px;
+	text-decoration: none;
 	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 }
+
 
 /* ===== navigation menu ===== */ 
 
@@ -90,6 +105,8 @@ img {
 	margin-right: 15px;
 	padding: 0;
 }
+
+
 
 .navmenu-hover {
 	display: inline-block;
@@ -115,6 +132,8 @@ img {
 	transform-origin: bottom left;
 	visibility: visible;
 }
+
+
 
 /* ======================= header end ====================
 *
@@ -245,28 +264,44 @@ footer {
 /* =========== APPLY BUTTON ============ */
 
 .apply-button {
-	background-color: #00B944;
-	color: #FFFFFF;
-	border-radius: 40px;
-	font-weight: 600;
-	padding: 10px 20px;
-	align-items: center;
-	vertical-align: middle;
-	text-align: center;
-	width: 300px;
-	height: 28px;
-	font-size: 16px;
+    background-color: #00B944;
+    display: block;
+    margin: 20px 0px 0;
+    border-radius: 44px;
+    width: 280px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
 	text-decoration: none;
 	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 }
 
+.apply-button:hover {
+    background-color: #00B944;
+    display: block;
+    margin: 20px 0px 0;
+    border-radius: 44px;
+    width: 280px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+	text-decoration: none;
+	box-shadow: 0 5px 20px rgba(255, 255, 255, 0.486);
+}
 
 /*==================== HOME PAGE ========================= */
 
 /* ==== hero header ==== */
 
 .heroheader {
-	padding: 115px 0 110px;
+	margin-top: 81px;
+	padding: 34px 0 110px;
 	background: #016FFF;
 	color: #FFFFFF;
 	width: 100%;
@@ -747,7 +782,7 @@ h1 {
     right: 0;
 }
 
-.view-btn {
+.view-btn {	
     background-color: #00B944;
     display: block;
     margin: 80px auto 0;
@@ -761,6 +796,24 @@ h1 {
     text-align: center;
 	text-decoration: none;
 	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
+}
+
+.view-btn:hover {
+
+	background-color: #00B944;
+    display: block;
+    margin: 80px auto 0;
+    border-radius: 44px;
+    width: 280px;
+    height: 50px;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+	text-decoration: none;
+	box-shadow: 0 5px 20px rgba(255, 255, 255, 0.486);
+	
 }
 
 /* ============ REVIEWS ========== */
@@ -1133,13 +1186,32 @@ ul li input[type=checkbox]:checked ~ i:after {
 	text-decoration: none;
 }
 
+.read-btn:hover {
+	display: block;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #016FFF;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+	flex: right;
+    color: #ffffff;
+	text-decoration: none;
+	background-color: #016FFF;
+}
 
 
 
 /* =================== APPLY NOW PAGE ==================== */
 
+.apply-wrapper {
+	margin-top: 81px;
+}
+
 .apply-header {
-	padding: 100px 0 100px;
+	padding: 30px 0 100px;
 	background: #016FFF;
 	color: #FFFFFF;
 	width: 100%;
@@ -1162,11 +1234,13 @@ ul li input[type=checkbox]:checked ~ i:after {
 .apply-form-table {
 	border-collapse: collapse;
 	font-size: 12px;
+	background-color: transparent;
 }
 
-.apply-form tr {
+.apply-form td {
 	font-weight: bold;
 	font-size: 10px;
+	background-color: transparent;
 }
 
 .bottom-border {
@@ -1200,8 +1274,29 @@ ul li input[type=checkbox]:checked ~ i:after {
 	height: 38px;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 	width: 30%;	
+	}
+
+.form-submit-button:hover {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	background-color: #00B944;
+	color: #FFFFFF;
+	border-radius: 40px;
+	font-weight: 550;
+	padding: 8px 20px;
+	align-items: center;
+	text-align: center;
+	height: 38px;
+	font-size: 16px;
+	text-decoration: none;
+	width: 30%;	
+	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 	}
 
 /*
@@ -1223,86 +1318,95 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 /* =================== TYPES OF LOANS PAGE ==================== */
 
-.loan-wrapper {
+.loanpage-wrapper {
 	max-width: 1280px;	
-	background-color: #FFFFFF;
-	padding-top:80px;
-	
+	margin-top: 81px;
 }
 
-.loan-container {
+.loanpage-container {
 	height: auto;	
 }
 
-.loan-title {
+/* TYPES OF LOANS NAVIGATION BAR */
+
+.loan-nav-title {
 	color: #FFFFFF;
 	font-weight: bold;
-	padding: 40px 30px 10px;
-
+	padding: 39px 40px 10px;
 }
 
 .loan-nav {
-
 	background-color: #016FFF;
 	position: fixed;
 	height:	1800px;
-	padding-top: 5px;
-	width: 100%;
-	min-height: 500px;
+	width: 20%;
 }
 
 .loan-nav a{
 	color: #FFFFFF;
 	font-weight: bold;
 	display: block;
-	padding: 10px 30px 10px;
+	padding: 10px 40px 10px;
 	text-decoration: none;
-	
 }
 
 .loan-nav a:hover{
 	color: #FFFFFF;
 	font-weight: bold;
 	display: block;
-	padding: 10px 30px 10px;
+	padding: 10px 40px 10px;
 	text-decoration: underline;
-	
 }
 
+/* TYPES OF LOANS CONTENT */
 
 .loan-types-wrapper {
-
-	background-color: #FFFFFF;
-	position: relative;
-	margin-left: 20%;
-	padding-left: 12%;
-	padding-top: 80px;
-
-
-
-	
+	background-color: transparent;
+	width: 70%;
+	margin-left: 30%;
 }
 
-
-.loan-types-content-left {
-	height: 612px;
-	width: 80%;
+.loan-types-wrapper table, tr, td {
+	border: 0px solid;
+	border-color: #000000;
+	border-spacing: 0px;
 }
 
-.loan-types-content-right {
-	height: 612px;
-	width: 80%;
+.loan-types-wrapper img {
+	width: 400px;
+	height: auto;
+}
+
+.loan-types-container {
+	background-color: transparent;
+	padding-top: 39px;
+}
+
+.loan-image {
+	width: 100%;
+    height: 100%;
+	min-width: 50%;
+}
+
+.loan-image img {
+	width: 100%;
+    height: 100%;
+	object-fit: cover;
 }
 
 .loan-types-content-left p {
-	padding-right: 50px;
-
+	padding-right: 40px;
+	margin-top: 0px;
+	padding-bottom: 5px;
 }
 
 .loan-types-content-right p {
-	padding-left: 50px;
-
+	padding-left: 40px;
+	margin-top: 0px;
+	padding-bottom: 5px;
 }
+
+/* TYPES OF LOANS APPLY BUTTON */
 
 .apply-btn {
 	display: block;
@@ -1316,8 +1420,8 @@ ul li input[type=checkbox]:checked ~ i:after {
     font-size: 14px;
 	flex: right;
     color: #016FFF;
+	margin-top: 10px;
 	text-decoration: none;
-	margin-top: 15px;
 }
 
 .apply-btn:hover {
@@ -1333,6 +1437,24 @@ ul li input[type=checkbox]:checked ~ i:after {
 	flex: right;
     color: #FFFFFF;
 	text-decoration: none;
-	margin-top: 15px;
+	margin-top: 10px;
 	background-color: #016FFF;
 }
+
+
+/*SCROLLING*/
+
+html {
+	zoom: 100%;
+	scroll-behavior: smooth;  /*Adds smooth scrolling instead of snapping to element*/
+  }
+
+.loan-types-content-left,
+.loan-types-content-right
+{	
+	padding-bottom: 90px;
+	width: 100%;
+	background-color: transparent;
+	scroll-margin-block-start: 120px; /*Adds margin to the top of the viewport*/
+	scroll-margin-block-end: 110px; /*Adds margin to the bottom of the viewport*/
+  }
