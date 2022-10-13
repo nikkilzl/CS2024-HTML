@@ -1129,7 +1129,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 /* =================== APPLY NOW PAGE ==================== */
 
 .apply-header {
-	padding: 115px 0 110px;
+	padding: 100px 0 100px;
 	background: #016FFF;
 	color: #FFFFFF;
 	width: 100%;
@@ -1139,13 +1139,38 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 .apply-form {
-	padding: 50px 0 110px;
+	padding: 40px 0 110px;
 	background: #FFFFFF;
-	color: #000000;
+	color: grey;
 	width: 100%;
 	height: 400px;
 	position: relative;
 	text-align: center;
+}
+
+
+
+.apply-form {
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.apply-form tr {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.bottom-border {
+	border-bottom: 0.5pt solid grey;
+  }
+
+.apply-form input, select {
+	border: none;
+	background-color: transparent;
+	resize: none;
+	outline: none;
+	width: 99%;
+	height: 60%;
 }
 
 .form-submit-button, input[type="submit"], input[type="reset"] {
@@ -1166,16 +1191,11 @@ ul li input[type=checkbox]:checked ~ i:after {
 	height: 38px;
 	font-size: 16px;
 	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);	
+	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
+	width: 30%;	
 	}
-}
 
 /*
-
-
-
-
-
 
 	background-color: #00B944;
 	color: #FFFFFF;
@@ -1234,7 +1254,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 	background-color: #FFFFFF;
 	position: relative;
 	margin-left: 25%;
-	padding-left: 15%;
+	padding-left: 10%;
 
 	
 }
