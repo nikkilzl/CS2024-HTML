@@ -488,10 +488,6 @@ h1 {
 
 /* media scroller */
 
-.media-group div:target ~ #loanservice {
-	opacity:0;
-}
-
 
 
 .media-container {
