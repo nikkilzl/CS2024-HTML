@@ -6,6 +6,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Noto Sans', sans-serif;
+	text-decoration: none;
 }
 
 div {
@@ -107,7 +108,6 @@ img {
 }
 
 
-
 .navmenu-hover {
 	display: inline-block;
 	position: relative;
@@ -127,7 +127,8 @@ img {
 	transition: transform 0.4s ease-out;
 }
 
-.navmenu-hover:hover:before {
+.navmenu-hover:hover:before, 
+.navmenu-hover.active:before {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 	visibility: visible;
@@ -567,6 +568,7 @@ h1 {
     width: 150px;
     height: 40px;
     border: 1px solid #016FFF;
+	color: #016FFF;
     border-radius: 50px;
     text-align: center;
     line-height: 38px;
@@ -577,9 +579,20 @@ h1 {
 	align-self: flex-end;
 }
 
-.loan-btn a {
-	color: #016FFF;
+.loan-btn:hover {
+	width: 150px;
+    height: 40px;
+    border: 1px solid #016FFF;
+	color: #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+	flex: right;
 	text-decoration: none;
+	align-self: flex-end;
+	background-color: #016FFF;
 }
 
 .slide-title {
@@ -1797,7 +1810,7 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 .loan-types-wrapper {
 	background-color: transparent;
-	width: 70%;
+	width: 65%;
 	margin-left: 30%;
 }
 
