@@ -33,91 +33,121 @@
     <!--HEADER END-->
 
     <!--APPLY PAGE HEADER-->
-    <body>
         <div class="apply-wrapper">
-        <div class="apply-header">
-            <h1>Apply for a loan with us</h1>
-            <p>Fast. Reliable. Confidential.</p>
-        </div>
+            <div class="apply-header">
+                <h1>Apply for a loan with us</h1>
+                <p>Fast. Reliable. Confidential.</p>
+            </div>
     
-        <div class="apply-form">
-            <form>
-                <table width="60%" align="center" class="apply-form-table">
-                    <tr height="40px" >
-                        <td height="20px" width="40%" align="left" class="bottom-border">
-                            <input type="text" name="fullname" value="" required>
-                        </td>
-                        <td width="10%"></td>
-                        <td height="20px" width="40%" align="left" class="bottom-border">
-                            <input type="text" name="contactnumber" value="" required>
-                        </td>
-                    </tr>
-                    <tr height="40px">
-                        <td align="left" valign="top">
-                            Full Name (as per NRIC) *
-                        </td>
-                        <td></td>
-                        <td align="left" valign="top">
-                            Contact Number *
-                        </td>
-                    </tr>
-                    <tr height="40px">
-                        <td height="20px" align="left" class="bottom-border">
-                            <select style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" name="loantype" required>
-                                <option></option>
-                                <option value="personal">Personal Loan</option>
-                                <option value="business">Business Loan</option>
-                                <option value="foreigner">Foreigner Loan</option>
-                                <option value="education">Education Loan</option>
-                                <option value="medical">Medical Loan</option>
-                                <option value="wedding">Wedding Loan</option>
-                                <option value="vacation">Vacation Loan</option>
-                                <option value="renovation">Renovation Packages</option>
-                            </select>
-                        </td>
-                        <td></td>
-                        <td height="20px" align="left" class="bottom-border">
-                            <input type="number" name="monthlyincome" value="" step="100" min="0" required>
-                        </td>
-                    </tr>
-                    <tr height="40px">
-                        <td align="left" valign="top">
-                            Purpose of Loan (Select the most relevant) *
-                        </td>
-                        <td></td>
-                        <td align="left" valign="top">
-                            Monthly Income *
-                        </td>
-                    </tr>
-                    <tr height="40px">
-                        <td height="20px" align="left" class="bottom-border">
-                            <input type="number" name="loanamount" value="" step="100" min="0" required>
-                        </td>
-                        <td></td>
-                        <td height="20px" align="left" class="bottom-border">
-                            <input type="text" name="additionalmsg" value="">
-                        </td>
-                    </tr>
-                    <tr height="40px">
-                        <td align="left" valign="top">
-                            Loan Amount Required *
-                        </td>
-                        <td></td>
-                        <td align="left" valign="top">
-                            Additonal Messages <span style="font-weight:normal">(e.g. preferred appointment time)</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" height="100px" align="center">
-                            <input type="submit" value="Submit Application" class="form-submit-button">
-                        </td>
-                    </tr>
-                </table>
-
-
-            </form>
+            <div class="apply-form">
+                <form>
+                    <table width="85%" align="center" class="apply-form-table">
+                        <tr height="80px" >
+                            <td height="20px" width="40%" align="left" class="bottom-border">
+                                <input type="text" name="fullname" value="" required>
+                            </td>
+                            <td width="10%"></td>
+                            <td height="20px" width="40%" align="left" class="bottom-border">
+                                <input type="text" name="contactnumber" value="" required>
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td align="left" valign="top">
+                                Full Name (as per NRIC) *
+                            </td>
+                            <td></td>
+                            <td align="left" valign="top">
+                                Contact Number *
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td height="20px" align="left" class="bottom-border">
+                                <select style="font-family: 'Noto Sans', sans-serif; font-size: 12px;" name="loantype" required>
+                                    <option></option>
+                                    <option value="personal">Personal Loan</option>
+                                    <option value="business">Business Loan</option>
+                                    <option value="foreigner">Foreigner Loan</option>
+                                    <option value="education">Education Loan</option>
+                                    <option value="medical">Medical Loan</option>
+                                    <option value="wedding">Wedding Loan</option>
+                                    <option value="vacation">Vacation Loan</option>
+                                    <option value="renovation">Renovation Packages</option>
+                                </select>
+                            </td>
+                            <td></td>
+                            <td height="20px" align="left" class="bottom-border">
+                                <input type="number" name="monthlyincome" value="" step="100" min="0" required>
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td align="left" valign="top">
+                                Purpose of Loan (Select the most relevant) *
+                            </td>
+                            <td></td>
+                            <td align="left" valign="top">
+                                Monthly Income *
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td height="20px" align="left" class="bottom-border">
+                                <input type="number" name="loanamount" value="" step="100" min="0" required>
+                            </td>
+                            <td></td>
+                            <td height="20px" align="left" class="bottom-border">
+                                <input type="text" name="loanduration" value="">
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td align="left" valign="top">
+                                Loan Amount Required *
+                            </td>
+                            <td></td>
+                            <td align="left" valign="top">
+                                Loan Duration (Please indicate in months) *
+                            </td>
+                        </tr>
+                        <tr height="40px">
+                            <td height="20px" align="left" class="bottom-border">
+                                <input type="number" name="additonalmsg" value="" step="100" min="0" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                Additional Message <span style="font-size:normal">(e.g. preferred appointment time.)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" height="100px" align="center" style="padding-top:50px">
+                                <input type="submit" value="Submit Application" class="form-submit-button">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
-    </body>
+        <div class="singpass">
+                <div class="singpass-container">
+                    <p align="center" style="font-size:13px;color:grey">Apply with</p>
+                    <img align="center" src="assets/icons/singpass.png">
+                </div>
+            </div>
+        <div class="security-section">
+            <div class="container">
+                <div class="text-center">
+                    <img class="security-section__img" src="assets/icons/icon-security.svg">
+                </div>
+                <div class="security-section-description">
+                    <div class="box">
+                        <h3 style="font-weight:700;font-size:14px;">Your Privacy and Security, Protected</h3>
+                        <p class="text-sd">
+                             We take full measures to protect your identity. By submitting this form, 
+                             you agree to be contacted with the information stated above.
+                        </p>
+                        <p class="text-sd">Your application is 100% confidential</p>
+                    </div>
+                </div>
+            </div
+        </div>
 
     <!--FOOTER-->
     <footer>

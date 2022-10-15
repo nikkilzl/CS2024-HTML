@@ -1481,67 +1481,6 @@ ul li input[type=checkbox]:checked ~ i:after {
     transform: rotateX(0deg);
   }
 }
-/*
-.mt-20px {
-    margin-top: 20px!important;
-}
-
-.accordion {
-    border-bottom: 1px solid #e5e7eb;
-    text-align: initial;
-    transition: box-shadow .2s ease;
-}
-
-.accordion:active {
-	border-bottom: 1px solid #016FFF;
-}
-
-.text-lg-lg {
-    font-size: 20px;
-}
-
-.accordion-header {
-    padding: 30px 0 32px;
-	min-height: 80px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-}
-
-.accordion-header:after {
-    content: "";
-    position: absolute;
-    top: 37px;
-    width: 14px;
-    height: 14px;
-    background-image: url(assets/icons/plus.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-	right: 20px;
-    display: block;
-}
-
-.acccordion:active .accordion-header:after {
-    background-image: url(assets/icons/minus.png);
-}
-
-.accordion-title {
-	font-size: 18px;
-}
-
-.accordion-body {
-    padding: 0 54px 0 0;
-    overflow: hidden;
-    -webkit-transition: all .2s ease,margin 0s;
-    transition: all .2s ease,margin 0s;
-    margin-top: -10px;
-}
-
-.accordion-body:active {
-	padding-bottom: 22px;
-}
 
 /* ========= ARTICLES ========== */
 
@@ -1638,11 +1577,11 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 .apply-header {
-	padding: 30px 0 100px;
+	padding: 100px 0 90px;
 	background: #016FFF;
 	color: #FFFFFF;
 	width: 100%;
-	height: 50px;
+	height: 150px;
 	position: relative;
 	text-align: center;
 }
@@ -1660,34 +1599,36 @@ ul li input[type=checkbox]:checked ~ i:after {
 
 .apply-form-table {
 	border-collapse: collapse;
-	font-size: 12px;
+	font-size: 16px;
 	background-color: transparent;
+	align-items: center;
 }
 
 .apply-form td {
 	font-weight: bold;
-	font-size: 10px;
+	font-size: 13px;
 	background-color: transparent;
 }
 
 .bottom-border {
 	border-bottom: 0.5pt solid grey;
+	align-items: center;
   }
 
 .apply-form input, select {
 	border: none;
 	background-color: transparent;
-	resize: none;
+	resize: vertical;
 	outline: none;
 	width: 99%;
 	height: 60%;
+	padding-top: 30px;;
 }
 
 .form-submit-button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -1725,6 +1666,73 @@ ul li input[type=checkbox]:checked ~ i:after {
 	width: 30%;	
 	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
 	}
+
+.security-section {
+    background-color: #f4f5fa;
+	width: 100%;
+	height: 200px;
+	align-items: center;
+}
+
+.security-section .container {
+    display: flex;
+    position: relative;
+	align-items: center;
+	width: 1280px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.security-section__img {
+    position: absolute;
+	top: -60px;
+    left: 22px;
+	width: 200px;
+	height: 200px;
+	padding-left: 50px;
+}
+
+.security-section-description {
+    background-color: #f4f5fa;
+    padding: 20px 0 30px;
+	padding-left: 300px;
+	max-width: 1280px;
+}
+
+.security-section-description .box {
+    max-width: 100%;
+	height: 70px;
+	padding-top: 0;
+}
+
+.text-sd {
+	font-size: 14px;
+	line-height: 11px;
+}
+
+.singpass {
+	width: 100%;
+	padding-bottom: 150px;
+	align-items: center;
+}
+
+.singpass-container {
+	max-width: 1140px;
+	padding: 10px 60px;
+	align-items: center;
+	text-align: center;
+}
+
+.singpass-container img {
+	width: 100px;
+	height: 17px;
+}
+
+
+
+
 
 /*
 
