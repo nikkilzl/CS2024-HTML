@@ -564,34 +564,39 @@ h1 {
 
 }
 
+
 .loan-btn {
-    width: 150px;
+	margin-left: 18px;	
+    padding: 0px 10px;
+    display: inline-block;
+    width: 100px;
     height: 40px;
     border: 1px solid #016FFF;
-	color: #016FFF;
     border-radius: 50px;
     text-align: center;
     line-height: 38px;
     font-weight: bold;
     font-size: 14px;
 	flex: right;
+    color: #016FFF;
 	text-decoration: none;
-	align-self: flex-end;
 }
 
 .loan-btn:hover {
-	width: 150px;
+	margin-left: 18px;	
+	padding: 0px 10px;
+	display: inline-block;
+    width: 100px;
     height: 40px;
     border: 1px solid #016FFF;
-	color: #FFFFFF;
     border-radius: 50px;
     text-align: center;
     line-height: 38px;
     font-weight: bold;
     font-size: 14px;
 	flex: right;
+    color: #ffffff;
 	text-decoration: none;
-	align-self: flex-end;
 	background-color: #016FFF;
 }
 
@@ -1855,6 +1860,8 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 /* TYPES OF LOANS APPLY BUTTON */
+
+
 
 .apply-btn {
 	display: block;
