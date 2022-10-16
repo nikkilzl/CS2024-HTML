@@ -13,6 +13,19 @@ div {
 	display: block;
 }
 
+.arrow {
+	position: fixed;
+	bottom: 10px;
+	right: 3px;
+	padding:10px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 100%;
+	z-index: 999;
+
+}
+
 /* ================== header =================== */
 
 .navbar-fixed {
@@ -1749,26 +1762,6 @@ ul li input[type=checkbox]:checked ~ i:after {
 }
 
 
-
-
-
-/*
-
-	background-color: #00B944;
-	color: #FFFFFF;
-	border-radius: 40px;
-	font-weight: 550;
-	padding: 8px 20px;
-	align-items: center;
-	text-align: center;
-	height: 38px;
-	font-size: 16px;
-	text-decoration: none;
-	box-shadow: 0 5px 20px rgb(0 185 68 / 30%);
-*/
-
-
-
 /* =================== TYPES OF LOANS PAGE ==================== */
 
 .loanpage-wrapper {
@@ -1793,6 +1786,8 @@ ul li input[type=checkbox]:checked ~ i:after {
 	position: fixed;
 	height:	1800px;
 	width: 20%;
+	overflow: hidden;
+    transition: all .25s ease;
 }
 
 .loan-nav a{
